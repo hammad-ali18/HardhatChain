@@ -20,9 +20,9 @@ require('@openzeppelin/hardhat-upgrades');
 dotenvConfig({ path: resolve(__dirname, "./.env") });
 
 const chainIds = {
-  ganache: 1337,
+  ganache: 31337,
   goerli: 5,
-  hardhat: 31337,
+  hardhat: 1337,
   kovan: 42,
   mainnet: 1,
   bscmainnet: 56,
@@ -119,6 +119,7 @@ const config: HardhatUserConfig = {
     mumbai: createTestnetConfig("mumbai"),
     bscmainnet: createTestnetConfig("bscmainnet"),
     matic: createTestnetConfig("matic"),
+
   },
   etherscan: {
     // Your API key for Etherscan
@@ -128,8 +129,8 @@ const config: HardhatUserConfig = {
     // apiKey: "FFBBU5ZQ2KV1183XT3VRBKF68ZR56RWT5B" //bsc
   },
   paths: {
-    artifacts: "./artifacts",
-    cache: "./cache",
+    artifacts: "./src/react-app/src/artifacts",
+    cache: "./src/react-app/src/cache",
     sources: "./contracts",
     tests: "./test",
   },
