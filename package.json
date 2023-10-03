@@ -79,13 +79,13 @@
     "test": "hardhat test",
     "typechain": "hardhat typechain"
   },
-  "main": "src/react-app/src/index.js",
+  "main": "index.js",
   "directories": {
-    "test": ""
+    "test": "test"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/hammad-ali18/HardhatChain.git"
+    "url": "git+https://github.com/hammad-ali18/HardhatChain.git"
   },
   "bugs": {
     "url": "https://github.com/hammad-ali18/HardhatChain/issues"
