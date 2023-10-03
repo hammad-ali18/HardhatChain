@@ -120,6 +120,21 @@ const config: HardhatUserConfig = {
     bscmainnet: createTestnetConfig("bscmainnet"),
     matic: createTestnetConfig("matic"),
 
+    localhost: {
+      url: "http://127.0.0.1:8545",
+      // forking:{
+      //   url:"https://mainnet.infura.io/v3/01b94e7cd6fb4a8998e35d74593f3fac",
+      //   blockNumber:18233332
+
+      // }
+    },
+    hardhat:{
+      forking:{
+        url:"https://mainnet.infura.io/v3/01b94e7cd6fb4a8998e35d74593f3fac",
+        blockNumber:18233332
+
+      }
+    }
   },
   etherscan: {
     // Your API key for Etherscan
